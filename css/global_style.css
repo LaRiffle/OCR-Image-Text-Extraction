@@ -1,0 +1,106 @@
+@font-face {
+    font-family: "Avenir-Light";
+    src: url('../fonts/Avenir-Light.ttf');
+}
+@font-face {
+    font-family: "Avenir-Light_IE";
+    src: url('../fonts/Avenir-Light.eot');
+}
+body, button, input, optgroup, select, textarea {
+  font-family: "Avenir-Light", "Avenir-Light_IE", "-apple-system",system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+textarea {
+  min-height: 58px;
+}
+.hide {
+  display: none;
+}
+.center {
+  text-align: center;
+}
+.bold {
+  font-weight: bold;
+}
+.success {
+  color: #5cb85c;
+}
+a {
+  outline: 0;
+}
+a:hover, a:visited, a:link, a:active {
+  text-decoration: none;
+}
+@media screen and (min-width: 576px) {
+  .mobile {
+    display: none !important;
+  }
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+@media only screen and (max-width : 576px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+}
+a.sober_link:hover {
+  text-decoration: none;
+}
+
+
+.line, .word {
+  border-radius: 14px;
+}
+.line {
+  margin-bottom: 2px;
+  padding: 5px;
+  padding-bottom: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 18px;
+}
+.word {
+  display: inline-block;
+  padding: 0px;
+  padding-top: 2px;
+  padding-left: 6px;
+  padding-right: 6px;
+  color: white;
+  background-color: rgba(0, 123, 255, 1);
+  margin-right: 2px;
+  margin-bottom: 4px;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+.word:hover {
+  cursor: text;
+}
+.word.selected {
+  background-color:	rgb(255,140,0);
+}
+.word-input {
+  border-radius: 12px;
+  border: none;
+  margin-top: -1px;
+  margin-bottom: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.actioner {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  height: 40px;
+  padding: 10px;
+  padding-top: 5px;
+  padding-right: 3px;
+}
+.actioner a {
+  display: inline-block;
+  margin-right: 7px;
+}

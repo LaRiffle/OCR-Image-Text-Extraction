@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>OCR Text Recognition - Example</title>
+    <meta name="description" content="Le Bon Sillon est une plateforme de vente de vinyles pour les disquaires indépendants." />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/global_style.css">
+    <link rel="stylesheet" href="css/croppie.css">
+  </head>
+  <body>
+    <div id="record-page">
+    <div class="container" style="margin: 20px;">
+      <div class="row">
+        <div class="col-sm-6 offset-sm-3">
+          <h1 class="center">OCR Text Recognition</h1>
+          <img class="img-thumbnail" src="img/Document 30042018_41.jpg" style="margin-left: 25%;width: 50%; margin-bottom: 20px" />
+          <div id="div_formatter"></div>
+          <p class="center small" style="margin-top: 20px"><em>Théo Ryffel</em></p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/selection.js"></script>
+<script src="js/formatter.js"></script>
+<script src="js/word.js"></script>
+
+<script>
+var raw_text = `
+Un conte merveilleux par les réalisateurs de PERSEPOLIS
+oulet
+aux prunes
+Unfilmde Marjane Satrapi
+& Vincent Paronnaud
+HENGAMIH PANAHI PRINT POULET AUX PRUNE'S UN UM D MARJANE SATRAPI IT VINCENT PARONNAOD CRI FT REISE PAR MARIANE SATRAPl IT VINCENT PARONNAUD
+ARS LA RANL DESIEE POULET AUX PRUNES E MARJANE SATRAPLIT N IDIONSL ASSOCIATION TC MATHIELI AMALRIC EDOUARD BAIR MARIA DE MEDEIROS GOLSHIFITH FARAHANI
+l RK (ARAVACA CHIARA MA TR NANNI DI AMT DI BBOLI/1 I AI Ⅲ ARI 1 1 1 INE m( 1 1 1 UI ID DREAMS ch11 MANIPULATORS I 11M
+I UDIO 371 1 PACH I ORE ITI PRODUCTION ER M ) ARI I I RANO ( INfMA ZDF ART I ипп " ( INE MAGI A i A TK Ann CANAL (INE ( INE MA N m 1 1 PACII
+M10 UDO KRAMER
+,N GILLES LAURI NT (osTUMF、MADEI INI R)NTAINE (I FA / AI CC) MAc 4ILIMI NATIIAI" IISSIER PRI MILK Ay İTAN' 11 ROMI ΖΑ1DERMANN
+PRODUCTEIR 1NECUI FRANCOIS XAVIER DECRAFNE BANDE ORKINALE DISPONIBLE CHLZ UNI
+IVERSAL MUS
+SIDE
+-Studio 37 . Cremoge MEDIA ■ arte Film(s) Arme ctwa Le Pacte | viDEO
+--.
+Film
+`;
+Formatter.init(raw_text);
+</script>
+</html>
